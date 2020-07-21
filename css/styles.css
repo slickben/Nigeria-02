@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --yello: #FFB313;
+  --red: #B4020A;
+  --royal-blue: #1034A6
+}
+
+
+/* Back to top button*/
+
+.back-to-top {
+  position: fixed;
+  color: var(--yello);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top__footer {
+  color: var(--yello);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top .backIcon,
+.back-to-top__footer .backIcon {
+  background-color: white;
+  border: 2x solid var(--yello);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.back-to-top .backIcon:hover,
+.back-to-top__footer .backIcon:hover {
+  color: white;
+  background-color: var(--yello);
+}
+
+.back-to-top:hover .backIcon,
+.back-to-top__footer:hover .backIcon {
+  color: white;
+  background-color: var(--yello);
+}
+
+.back-to-top .backIcon:active .back-to-top__footer:active {
+  color: white;
+  background-color: var(--yello);
+}
+
+.back-to-top__footer {
+  position: absolute;
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .back-to-top {
+    display: none;
+  }
+
+  .back-to-top__footer {
+    position: absolute;
+    display: block;
+  }
+}
+
+/* Back to top button*/
+
+/* header */
+.head__btn {
+  border: 2px solid white;
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-yellow {
+  color: var(--yello);
+} 
+
+.bg-red {
+  color: var(--red);
+}
+
+.bg-yellow {
+  color: var(--yello);
+} 
+
+.btn-red  {
+  background-color: var(--red);
+}
+
+
+/* Navbar */
+
+.nav-link {
+  color: var(--royal-blue) !important;
+}
+
+.active {
+  color: var(--red) !important;
+}
+
+/* masthead */
+.masthead {
+  background-image: url('../images/Rectangle 32.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 572px;
+}
+
+.overlay {
+  background-color: rgba(16, 52, 166, 0.8);
+  min-height: 572px;
+}
+
+.overlay h1 {
+  font-size: 48px;
+}
+
+.overlay p {
+  font-size: 24px;
+}
+
+
+/* masthead */
+
+
+/* mission */
+
+.mission img{
+  max-width: 100%;
+}
+
+.mission h2::after {
+  content: "";
+  width: 40%;
+  border: 4px solid var(--yellow);
+  display: block;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+
+/* mission */
+
+/* media  Query*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .overlay h1 {
+    font-size: 28px;
+  }
+  
+  .overlay p {
+    font-size: 16px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* media  Query*/
